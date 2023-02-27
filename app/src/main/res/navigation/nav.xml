@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/menuPageFragment">
+
+    <fragment
+        android:id="@+id/menuPageFragment"
+        android:name="it.academy.android.garageappfinal20.fragments.MenuPageFragment"
+        android:label="fragment_menu_page"
+        tools:layout="@layout/fragment_menu_page">
+        <action
+            android:id="@+id/action_menuPageFragment_to_clientListFragment"
+            app:destination="@id/clientListFragment" />
+        <action
+            android:id="@+id/action_menuPageFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+        <action
+            android:id="@+id/action_menuPageFragment_to_vehicleListFragment"
+            app:destination="@id/vehicleListFragment" />
+        <action
+            android:id="@+id/action_menuPageFragment_to_interventionListFragment"
+            app:destination="@id/interventionListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientListFragment"
+        android:name="it.academy.android.garageappfinal20.fragments.ClientListFragment"
+        android:label="fragment_client_list"
+        tools:layout="@layout/fragment_client_list">
+        <action
+            android:id="@+id/action_clientListFragment_to_menuPageFragment"
+            app:destination="@id/menuPageFragment" />
+        <action
+            android:id="@+id/action_clientListFragment_to_addClientFragment"
+            app:destination="@id/addClientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClientFragment"
+        android:name="it.academy.android.garageappfinal20.fragments.AddClientFragment"
+        android:label="fragment_add_client"
+        tools:layout="@layout/fragment_add_client">
+        <action
+            android:id="@+id/action_addClientFragment_to_clientListFragment"
+            app:destination="@id/clientListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleListFragment"
+        android:name="it.academy.android.garageappfinal20.fragments.VehicleListFragment"
+        android:label="fragment_vehicle_list"
+        tools:layout="@layout/fragment_vehicle_list">
+        <action
+            android:id="@+id/action_vehicleListFragment_to_menuPageFragment"
+            app:destination="@id/menuPageFragment" />
+        <action
+            android:id="@+id/action_vehicleListFragment_to_addVehicleFragment"
+            app:destination="@id/addVehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interventionListFragment"
+        android:name="it.academy.android.garageappfinal20.fragments.InterventionListFragment"
+        android:label="fragment_intervention_list"
+        tools:layout="@layout/fragment_intervention_list">
+        <action
+            android:id="@+id/action_interventionListFragment_to_menuPageFragment"
+            app:destination="@id/menuPageFragment" />
+        <action
+            android:id="@+id/action_interventionListFragment_to_addInterventionFragment"
+            app:destination="@id/addInterventionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addVehicleFragment"
+        android:name="it.academy.android.garageappfinal20.fragments.AddVehicleFragment"
+        android:label="fragment_add_vehicle"
+        tools:layout="@layout/fragment_add_vehicle">
+        <action
+            android:id="@+id/action_addVehicleFragment_to_vehicleListFragment"
+            app:destination="@id/vehicleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addInterventionFragment"
+        android:name="it.academy.android.garageappfinal20.fragments.AddInterventionFragment"
+        android:label="fragment_add_intervention"
+        tools:layout="@layout/fragment_add_intervention">
+        <action
+            android:id="@+id/action_addInterventionFragment_to_interventionListFragment"
+            app:destination="@id/interventionListFragment" />
+    </fragment>
+</navigation>
