@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_marginTop="20dp"
@@ -11,33 +10,35 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="#fff"
-        android:padding="16dp"
-        >
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/brand_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Marca"/>
+            android:text="Marca" />
+
         <TextView
             android:id="@+id/model_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Modello"/>
+            android:text="Modello" />
+
         <TextView
             android:id="@+id/plate_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Targa"/>
+            android:text="Targa" />
+
         <TextView
             android:id="@+id/chassisNumber_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Numero di Telaio"/>
+            android:text="Numero di Telaio" />
     </LinearLayout>
 
 </LinearLayout>

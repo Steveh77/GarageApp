@@ -23,16 +23,6 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff">
 
@@ -123,6 +113,31 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Inserisci il telaio"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="Cliente ID"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/client_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="inserisci la marca"
             android:inputType="text" />
 
     </LinearLayout>

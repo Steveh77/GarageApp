@@ -20,10 +20,6 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="50dp" />
 
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -120,6 +116,31 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Inserisci la data di fine"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="end"
+            android:text="ID veicolo"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/vehicle_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start"
             android:inputType="text" />
 
     </LinearLayout>
