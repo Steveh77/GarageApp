@@ -12,16 +12,28 @@
         tools:layout="@layout/fragment_menu_page">
         <action
             android:id="@+id/action_menuPageFragment_to_clientListFragment"
-            app:destination="@id/clientListFragment" />
+            app:destination="@id/clientListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/action_menuPageFragment_to_addClientFragment"
             app:destination="@id/addClientFragment" />
         <action
             android:id="@+id/action_menuPageFragment_to_vehicleListFragment"
-            app:destination="@id/vehicleListFragment" />
+            app:destination="@id/vehicleListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
         <action
             android:id="@+id/action_menuPageFragment_to_interventionListFragment"
-            app:destination="@id/interventionListFragment" />
+            app:destination="@id/interventionListFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/clientListFragment"
@@ -30,10 +42,16 @@
         tools:layout="@layout/fragment_client_list">
         <action
             android:id="@+id/action_clientListFragment_to_menuPageFragment"
-            app:destination="@id/menuPageFragment" />
+            app:destination="@id/menuPageFragment"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@android:anim/fade_in" />
         <action
             android:id="@+id/action_clientListFragment_to_addClientFragment"
-            app:destination="@id/addClientFragment" />
+            app:destination="@id/addClientFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addClientFragment"
@@ -42,7 +60,9 @@
         tools:layout="@layout/fragment_add_client">
         <action
             android:id="@+id/action_addClientFragment_to_clientListFragment"
-            app:destination="@id/clientListFragment" />
+            app:destination="@id/clientListFragment"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@android:anim/fade_in" />
     </fragment>
     <fragment
         android:id="@+id/vehicleListFragment"
@@ -54,7 +74,11 @@
             app:destination="@id/menuPageFragment" />
         <action
             android:id="@+id/action_vehicleListFragment_to_addVehicleFragment"
-            app:destination="@id/addVehicleFragment" />
+            app:destination="@id/addVehicleFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/interventionListFragment"
@@ -66,7 +90,11 @@
             app:destination="@id/menuPageFragment" />
         <action
             android:id="@+id/action_interventionListFragment_to_addInterventionFragment"
-            app:destination="@id/addInterventionFragment" />
+            app:destination="@id/addInterventionFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/addVehicleFragment"
